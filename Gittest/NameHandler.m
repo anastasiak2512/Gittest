@@ -9,4 +9,13 @@
 @implementation NameHandler {
 
 }
+- (void)say_hello {
+    printf("Hello, %s\n", [self.name UTF8String]);
+}
+
+- (void)say_bye {
+    printf("Bye, %s\n", [self.name UTF8String]);
+}
+
+
 @end

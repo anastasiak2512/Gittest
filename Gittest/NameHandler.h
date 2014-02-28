@@ -7,5 +7,7 @@
 
 
 @interface NameHandler : NSObject
-
+@property (assign) NSString *name;
+- (void)say_hello;
+- (void)say_bye;
 @end
