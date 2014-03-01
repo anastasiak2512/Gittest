@@ -20,7 +20,7 @@ int64_t fib(uint32_t x) {
 }
 
 int main(int argc, const char * argv[]) {
-    NameHandler *user_name = nil;//[[NameHandler alloc] init];
+    NameHandler *user_name = [[NameHandler alloc] init];
 
     char buf[MAX_NAME_LENGTH];
     printf("What's your name?\n");
