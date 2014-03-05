@@ -33,16 +33,16 @@ int main(int argc, const char * argv[]) {
     [user_name ask_question:@"Enter a number"];
     //fscanf(stdin, "%s", num_buf);
 
-    /*   NSNumberFormatter *myNumFormatter = [[NSNumberFormatter alloc] init];
-       [myNumFormatter setLocale:[NSLocale currentLocale]];
+    NSNumberFormatter *myNumFormatter = [[NSNumberFormatter alloc] init];
+    [myNumFormatter setLocale:[NSLocale currentLocale]];
        [myNumFormatter setFormatterBehavior:NSNumberFormatterBehavior10_4];
        [myNumFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
 
        NSNumber *tempNum = [myNumFormatter numberFromString:[NSString stringWithUTF8String:num_buf]];
        int squared = [tempNum intValue] * [tempNum intValue];
-       [user_name give_answer:[[NSNumber numberWithInteger:squared] stringValue]];*/
+    [user_name give_answer:[[NSNumber numberWithInteger:squared] stringValue]];
 
-    int num = 0;
+    int num = 10;
     fscanf(stdin, "%d", num);
     [user_name give_answer:[[NSNumber numberWithInteger:num * num] stringValue]];
 
