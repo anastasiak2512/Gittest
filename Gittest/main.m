@@ -8,7 +8,7 @@
 #define MAX_NUM_LEN 16
 
 //Test Unreachable code
-/*int64_t fib(uint32_t x) {
+int64_t fib(uint32_t x) {
     if (x == 0)
         return 0;
     else if (x == 1)
@@ -17,7 +17,7 @@
         return 2;
     else
         return fib(x - 2) + fib(x - 1);
-}*/
+}
 
 int main(int argc, const char * argv[]) {
     NameHandler *user_name = [[NameHandler alloc] init];
