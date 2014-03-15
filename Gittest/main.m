@@ -7,18 +7,6 @@
 
 #define MAX_NUM_LEN 16
 
-//Test Unreachable code
-int64_t fib(uint32_t x) {
-    if (x == 0)
-        return 0;
-    else if (x == 1)
-        return 1;
-    else if (x == 1)
-        return 2;
-    else
-        return fib(x - 2) + fib(x - 1);
-}
-
 int main(int argc, const char * argv[]) {
     NameHandler *user_name = [[NameHandler alloc] init];
 
@@ -42,10 +30,7 @@ int main(int argc, const char * argv[]) {
     int squared = [tempNum intValue] * [tempNum intValue];
     [user_name give_answer:[[NSNumber numberWithInteger:squared] stringValue]];
 
-    int num = 10;
-    fscanf(stdin, "%d", num);
-    [user_name give_answer:[[NSNumber numberWithInteger:num * num] stringValue]];
-
     [user_name say_bye];
+
     return 0;
 }
