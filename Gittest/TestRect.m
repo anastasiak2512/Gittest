@@ -9,7 +9,7 @@
 @implementation TestRect {
 
 }
-/*
+
 + newTestRect
 {
     TestRect * rect = [[TestRect alloc] init];
@@ -51,7 +51,6 @@
     x = theX;
     y = theY;
 }
-*/
 
 
 @end
