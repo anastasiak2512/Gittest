@@ -7,9 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C5A516A4840526AC409B7D6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A5FF0DD73B0614A6ED583 /* main.cpp */; };
+		64688D85D0AA41DAADD47C8F /* libPods-GittestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E15C14ABED4DB98E32C7D5 /* libPods-GittestTests.a */; };
+		8C5A538B6E6BAF47ED8B6932 /* TestRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A52AB3DC0E3448F7269EC /* TestRect.m */; };
+		8C5A574E20AC4CCE4B625D8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A56B45E5163A291E7F4DA /* main.m */; };
+		8C5A59390A6A1D5C08FEECF2 /* KiwiLiveTempl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A5BF7AFF3D308BB6FB2CA /* KiwiLiveTempl.m */; };
 		8C5A5DCD0992BAB197C75E1C /* NameHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A5063AB8C79D8D20192D8 /* NameHandler.m */; };
+		AFF9B8BC18E0AA2500128989 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF9B8BB18E0AA2500128989 /* XCTest.framework */; };
+		AFF9B8C218E0AA2500128989 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AFF9B8C018E0AA2500128989 /* InfoPlist.strings */; };
+		AFFE890518E0ACAA00A8A91E /* FirstKiwiTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFE890418E0ACAA00A8A91E /* FirstKiwiTest.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFF9B8C618E0AA2500128989 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C5A561E2612C31795905BAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C5A52BA7A26900CDA23CCB1;
+			remoteInfo = Gittest;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		8C5A5FDF5538F3164BC30CAB /* CopyFiles */ = {
@@ -24,11 +40,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1A0EA7E2F20D455E8712531E /* Pods-GittestTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GittestTests.xcconfig"; path = "Pods/Pods-GittestTests.xcconfig"; sourceTree = "<group>"; };
+		81E15C14ABED4DB98E32C7D5 /* libPods-GittestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GittestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C5A5063AB8C79D8D20192D8 /* NameHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameHandler.m; sourceTree = "<group>"; };
+		8C5A52AB3DC0E3448F7269EC /* TestRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRect.m; sourceTree = "<group>"; };
+		8C5A56B45E5163A291E7F4DA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8C5A56DF86733EDFC132E127 /* Gittest.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Gittest.1; sourceTree = "<group>"; };
+		8C5A5938D1C7070F98AF85C2 /* TestRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRect.h; sourceTree = "<group>"; };
 		8C5A5958C62765B77352797C /* Gittest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Gittest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C5A5BF7AFF3D308BB6FB2CA /* KiwiLiveTempl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KiwiLiveTempl.m; sourceTree = "<group>"; };
 		8C5A5CD5C5061582ADDE6450 /* NameHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameHandler.h; sourceTree = "<group>"; };
-		8C5A5FF0DD73B0614A6ED583 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		AFF9B8B918E0AA2500128989 /* GittestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GittestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFF9B8BB18E0AA2500128989 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AFF9B8BF18E0AA2500128989 /* GittestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GittestTests-Info.plist"; sourceTree = "<group>"; };
+		AFF9B8C118E0AA2500128989 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AFF9B8C518E0AA2500128989 /* GittestTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GittestTests-Prefix.pch"; sourceTree = "<group>"; };
+		AFFE890418E0ACAA00A8A91E /* FirstKiwiTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstKiwiTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,16 +66,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AFF9B8B618E0AA2500128989 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF9B8BC18E0AA2500128989 /* XCTest.framework in Frameworks */,
+				64688D85D0AA41DAADD47C8F /* libPods-GittestTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		8C5A54E81568F88B6E50CBEF /* Gittest */ = {
 			isa = PBXGroup;
 			children = (
-				8C5A5FF0DD73B0614A6ED583 /* main.cpp */,
 				8C5A56DF86733EDFC132E127 /* Gittest.1 */,
 				8C5A5063AB8C79D8D20192D8 /* NameHandler.m */,
 				8C5A5CD5C5061582ADDE6450 /* NameHandler.h */,
+				8C5A56B45E5163A291E7F4DA /* main.m */,
+				8C5A5938D1C7070F98AF85C2 /* TestRect.h */,
+				8C5A52AB3DC0E3448F7269EC /* TestRect.m */,
 			);
 			path = Gittest;
 			sourceTree = "<group>";
@@ -56,8 +94,13 @@
 		8C5A56F6F211A33D8C200652 = {
 			isa = PBXGroup;
 			children = (
+				AFFE890418E0ACAA00A8A91E /* FirstKiwiTest.m */,
+				AFF9B8BD18E0AA2500128989 /* GittestTests */,
+				AFF9B8BA18E0AA2500128989 /* Frameworks */,
 				8C5A5A9EC059DC42CC5574EC /* Products */,
 				8C5A54E81568F88B6E50CBEF /* Gittest */,
+				1A0EA7E2F20D455E8712531E /* Pods-GittestTests.xcconfig */,
+				8C5A5BF7AFF3D308BB6FB2CA /* KiwiLiveTempl.m */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,8 +108,36 @@
 			isa = PBXGroup;
 			children = (
 				8C5A5958C62765B77352797C /* Gittest */,
+				AFF9B8B918E0AA2500128989 /* GittestTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AFF9B8BA18E0AA2500128989 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFF9B8BB18E0AA2500128989 /* XCTest.framework */,
+				81E15C14ABED4DB98E32C7D5 /* libPods-GittestTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFF9B8BD18E0AA2500128989 /* GittestTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFF9B8BE18E0AA2500128989 /* Supporting Files */,
+			);
+			path = GittestTests;
+			sourceTree = "<group>";
+		};
+		AFF9B8BE18E0AA2500128989 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFF9B8BF18E0AA2500128989 /* GittestTests-Info.plist */,
+				AFF9B8C018E0AA2500128989 /* InfoPlist.strings */,
+				AFF9B8C518E0AA2500128989 /* GittestTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,13 +160,39 @@
 			productReference = 8C5A5958C62765B77352797C /* Gittest */;
 			productType = "com.apple.product-type.tool";
 		};
+		AFF9B8B818E0AA2500128989 /* GittestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFF9B8CA18E0AA2500128989 /* Build configuration list for PBXNativeTarget "GittestTests" */;
+			buildPhases = (
+				74AAB64CA4114F55991F8FA2 /* Check Pods Manifest.lock */,
+				AFF9B8B518E0AA2500128989 /* Sources */,
+				AFF9B8B618E0AA2500128989 /* Frameworks */,
+				AFF9B8B718E0AA2500128989 /* Resources */,
+				FFA47D482CC74127A73DC02C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFF9B8C718E0AA2500128989 /* PBXTargetDependency */,
+			);
+			name = GittestTests;
+			productName = GittestTests;
+			productReference = AFF9B8B918E0AA2500128989 /* GittestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		8C5A561E2612C31795905BAD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = JB;
+				TargetAttributes = {
+					AFF9B8B818E0AA2500128989 = {
+						TestTargetID = 8C5A52BA7A26900CDA23CCB1;
+					};
+				};
 			};
 			buildConfigurationList = 8C5A5964D9B19FB0AE34B8C7 /* Build configuration list for PBXProject "Gittest" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -110,21 +207,95 @@
 			projectRoot = "";
 			targets = (
 				8C5A52BA7A26900CDA23CCB1 /* Gittest */,
+				AFF9B8B818E0AA2500128989 /* GittestTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFF9B8B718E0AA2500128989 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF9B8C218E0AA2500128989 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74AAB64CA4114F55991F8FA2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FFA47D482CC74127A73DC02C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-GittestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8C5A54C3724640D281153BFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C5A516A4840526AC409B7D6 /* main.cpp in Sources */,
 				8C5A5DCD0992BAB197C75E1C /* NameHandler.m in Sources */,
+				8C5A574E20AC4CCE4B625D8B /* main.m in Sources */,
+				8C5A538B6E6BAF47ED8B6932 /* TestRect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF9B8B518E0AA2500128989 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFFE890518E0ACAA00A8A91E /* FirstKiwiTest.m in Sources */,
+				8C5A59390A6A1D5C08FEECF2 /* KiwiLiveTempl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFF9B8C718E0AA2500128989 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C5A52BA7A26900CDA23CCB1 /* Gittest */;
+			targetProxy = AFF9B8C618E0AA2500128989 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AFF9B8C018E0AA2500128989 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFF9B8C118E0AA2500128989 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8C5A5069BA42CF881264BF2C /* Release */ = {
@@ -209,6 +380,49 @@
 			};
 			name = Debug;
 		};
+		AFF9B8C818E0AA2500128989 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A0EA7E2F20D455E8712531E /* Pods-GittestTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GittestTests/GittestTests-Prefix.pch";
+				INFOPLIST_FILE = "GittestTests/GittestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		AFF9B8C918E0AA2500128989 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A0EA7E2F20D455E8712531E /* Pods-GittestTests.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GittestTests/GittestTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GittestTests/GittestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -219,12 +433,22 @@
 				8C5A5F6B86B5A8860EC5E5D0 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C5A5964D9B19FB0AE34B8C7 /* Build configuration list for PBXProject "Gittest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8C5A5D96B45740FFEEBEBD0F /* Release */,
 				8C5A598152ECFB3049FF6255 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFF9B8CA18E0AA2500128989 /* Build configuration list for PBXNativeTarget "GittestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFF9B8C818E0AA2500128989 /* Release */,
+				AFF9B8C918E0AA2500128989 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
