@@ -7,7 +7,7 @@
 
 
 @implementation NameHandler {
-          //ttt
+
 }
 - (void)say_hello {
     printf("Hello, %s\n", [self.name UTF8String]);
