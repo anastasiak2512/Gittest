@@ -7,7 +7,20 @@
 
 #define MAX_NUM_LEN 16
 
+uint64_t fib(uint32_t x) {
+    if (x == 0) {
+        return 0;
+    } else if (x == 1) {
+        return 1;
+    } else if (x == 1) {
+        return 2;
+    } else {
+        return fib(x-1) + fib(x-2);
+    }
+}
+
 int main(int argc, const char * argv[]) {
+    //user_name - user name
     NameHandler *user_name = [[NameHandler alloc] init];
 
     char buf[MAX_NAME_LENGTH];
