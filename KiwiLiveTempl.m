@@ -1,13 +1,10 @@
+#import <Kiwi/KWSpec.h>
 #import "KiwiMacros.h"
-#import "KWSpec.h"
 #import "KWExample.h"
 
 
-SPEC_BEGIN(AppTestSpec)
-    describe(@"AppTest", ^{
+SPEC_BEGIN(BasicServiceSpec)
+    describe(@"BasicService", ^{
 
-        it(@"it", ^{
-            
-        });
     });
 SPEC_END
