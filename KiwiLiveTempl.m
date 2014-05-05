@@ -3,8 +3,10 @@
 #import "KWExample.h"
 
 
-SPEC_BEGIN(BasicServiceSpec)
-    describe(@"BasicService", ^{
+SPEC_BEGIN(BasicCalcSpec)
+    describe(@"BasicCalc", ^{
+
+
 
     });
 SPEC_END
