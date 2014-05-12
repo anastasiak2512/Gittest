@@ -41,7 +41,10 @@ void foo() {
     [NSArray arrayWithObjects:[NSArray arrayWithObjects:a, b, c, nil], [NSArray arrayWithObjects:a, b, c, nil], nil];
     [NSDictionary dictionaryWithObjects:@[o1, o2, [NSNumber numberWithInt:123]] forKeys:[NSArray arrayWithObjects:k0, k2, k3, nil]];
     [NSDictionary dictionaryWithObjects:@[o1, o2, o3] forKeys:[NSArray arrayWithObject:k0]];
+
     [NSDictionary dictionaryWithObjectsAndKeys: o1, k1, o2, k2, nil];
+
+
     NSMutableDictionary *dictionary = [NSDictionary dictionaryWithObject:@1 forKey:@3];
 
 
@@ -51,11 +54,17 @@ void foo() {
     [dictionary objectForKey:@"df"];
 
     @([[NSArray alloc] count]);
+
+
     [NSNumber numberWithInt:a];
     [NSNumber numberWithInt:(a)];
     [NSNumber numberWithInt:123];
     [NSNumber numberWithBool:YES];
     [NSNumber numberWithBool:true];
+
+    [NSArray arrayWithObjects:a, b, c, nil];
+    [NSDictionary dictionaryWithObjects:@[o1, o2, o3] forKeys:[NSArray arrayWithObject:k0]];
+    [NSDictionary dictionaryWithObjectsAndKeys: o1, k1, o2, k2, nil];
 }
 
 int main(int argc, const char * argv[]) {
