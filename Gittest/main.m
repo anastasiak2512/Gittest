@@ -4,9 +4,6 @@
 //
 
 #import "NameHandler.h"
-#import "Person.h"
-#import "Car.h"
-#import "InsuranceCompany.h"
 
 #define MAX_NUM_LEN 16
 
@@ -22,55 +19,72 @@ uint64_t fib(uint32_t x) {
     }
 }
 
-void foo() {
-    [NSMutableArray arrayWithObject:@1];
-    [NSMutableArray arrayWithObjects:@1, @3, [NSMutableArray arrayWithObjects:[NSNumber numberWithFloat:1.23], nil], nil];
-    [NSMutableArray arrayWithObjects:@1, @2, @3 count:2]; //NO
-    NSMutableArray *array = [NSMutableArray arrayWithObject:@1];
+//void foo() {
+//    [NSMutableArray arrayWithObject:@1];
+//    [NSMutableArray arrayWithObjects:@1, @3, [NSMutableArray arrayWithObjects:[NSNumber numberWithFloat:1.23], nil], nil];
+//   // [NSMutableArray arrayWithObjects:@1, @2, @3 count:3]; //NO
+//    NSMutableArray *array = [NSMutableArray arrayWithObject:@1];
+//
+//    [array addObject:@1]; //NO
+//    [array objectAtIndex:1];
+//    [array objectAtIndexedSubscript:1];
+//    [array setObject:[NSNumber numberWithChar:'a'] atIndexedSubscript:2];
+//    [array insertObject: @"Indigo" atIndex: 1];
+//
+//    id a,b,c;
+//    id o1, o2, o3, k0, k1, k2, k3, x,y,z, p,q;
+//
+//    [NSArray arrayWithObjects:b, c, nil];
+//    [NSArray arrayWithObjects:c, nil];
+//    [NSArray arrayWithObjects:[NSArray arrayWithObjects:b, c, nil], [NSArray arrayWithObjects:b, c, nil], nil];
+//    [NSDictionary dictionaryWithObjects:@[o1, o2, [NSNumber numberWithInt:123]] forKeys:[NSArray arrayWithObjects:k0, k2, k3, nil]];
+//    [NSDictionary dictionaryWithObjects:@[o1, o2, o3] forKeys:[NSArray arrayWithObjects:k0, k1, k2]];
+//
+//
+////    NSMutableDictionary *dictionary = [NSDictionary dictionaryWithObject:@1 forKey:@3];
+////
+////
+////    [dictionary setValue:@"df" forKey:@"dfdf"];
+////    [dictionary setObject:@"object" forKey:@"key"];
+////    [dictionary setObject:@"df" forKeyedSubscript:@"dfdf"];
+////    [dictionary objectForKey:@"df"];
+//
+//    @([[NSArray alloc] count]);
+//
+//
+//
+//
+//    array[10];
+//    dictionary[@"key"] = @"object";
+//    @{a : @10, b : @1.23, c : @YES};
+//    @{a : @10, b : @3.14};
+//
+//
+//
+//
+//}
 
-    [array addObject:@1]; //NO
-    [array objectAtIndex:1];
-    [array objectAtIndexedSubscript:1];
-    [array setObject:[NSNumber numberWithChar:'a'] atIndexedSubscript:2];
-    [array insertObject: @"Indigo" atIndex: 1];
+void abc() {
+    ;
+}
 
-    id a, b, c, o1, o2, o3, k0, k1, k2, k3;
+void bcd() {
+    abc();
+}
 
-    [NSArray arrayWithObjects:a, b, c, nil];
-    [NSArray arrayWithObjects:a, nil];
-    [NSArray arrayWithObjects:[NSArray arrayWithObjects:a, b, c, nil], [NSArray arrayWithObjects:a, b, c, nil], nil];
-    [NSDictionary dictionaryWithObjects:@[o1, o2, [NSNumber numberWithInt:123]] forKeys:[NSArray arrayWithObjects:k0, k2, k3, nil]];
-    [NSDictionary dictionaryWithObjects:@[o1, o2, o3] forKeys:[NSArray arrayWithObject:k0]];
-
-    [NSDictionary dictionaryWithObjectsAndKeys: o1, k1, o2, k2, nil];
-
-
-    NSMutableDictionary *dictionary = [NSDictionary dictionaryWithObject:@1 forKey:@3];
-
-
-    [dictionary setValue:@"df" forKey:@"dfdf"];
-    [dictionary setObject:@"object" forKey:@"key"];
-    [dictionary setObject:@"df" forKeyedSubscript:@"dfdf"];
-    [dictionary objectForKey:@"df"];
-
-    @([[NSArray alloc] count]);
-
-
-    [NSNumber numberWithInt:a];
-    [NSNumber numberWithInt:(a)];
-    [NSNumber numberWithInt:123];
-    [NSNumber numberWithBool:YES];
-    [NSNumber numberWithBool:true];
-
-    [NSArray arrayWithObjects:a, b, c, nil];
-    [NSDictionary dictionaryWithObjects:@[o1, o2, o3] forKeys:[NSArray arrayWithObject:k0]];
-    [NSDictionary dictionaryWithObjectsAndKeys: o1, k1, o2, k2, nil];
+void test () {
+    bcd();
 }
 
 int main(int argc, const char * argv[]) {
 
     //user_name - user name
     NameHandler *user_name = [[NameHandler alloc] init];
+
+    NSError *err;
+    id dict;
+
+    NSData* data = [NSJSONSerialization dataWithJSONObject:dict options:nil error:&err];
 
     char buf[MAX_NAME_LENGTH];
     printf("What's your name?\n");
@@ -83,6 +97,7 @@ int main(int argc, const char * argv[]) {
     [user_name ask_question:@"Enter a number"];
     fscanf(stdin, "%s", num_buf);
 
+    //TODO: Check the conversion rules
     NSNumberFormatter *myNumFormatter = [[NSNumberFormatter alloc] init];
     [myNumFormatter setLocale:[NSLocale currentLocale]];
     [myNumFormatter setFormatterBehavior:NSNumberFormatterBehavior10_4];
