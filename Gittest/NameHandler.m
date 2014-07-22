@@ -41,7 +41,19 @@
 @end
 
 
+void* foo() {
+   return NULL:
+}
 
+void referenceNilSample() {
+    int *ptr = NULL;
+
+    if (foo()) {
+        if (*ptr) {
+
+        }
+    }
+}
 
 
 
