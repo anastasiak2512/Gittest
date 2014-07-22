@@ -42,7 +42,7 @@
 
 
 void* foo() {
-   return NULL:
+   return NULL;
 }
 
 void referenceNilSample() {
@@ -55,8 +55,38 @@ void referenceNilSample() {
     }
 }
 
+@interface Control: NSObject
+@end
+
+@interface Label: Control
+@end
+
+@interface Button: Control
+@end
+
+@interface RadioButton: Button
+@end
+
+Button *getButton();
+RadioButton *getRadioButton();
+
+void castSimple(bool bar, Control *control) {
+    Button *button = getButton();
+    RadioButton *radioButton = getRadioButton();
+
+    (Label *)control;
+
+    if (bar)
+        control = button;
+    else
+        control = radioButton;
+
+    (Label *)control;
 
 
+
+
+}
 
 
 
