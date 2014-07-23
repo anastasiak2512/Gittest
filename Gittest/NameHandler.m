@@ -39,28 +39,6 @@
 
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (!self.rssTitlesController) {
-        self.rssTitlesController = [[RSSTitlesController alloc] initWithNibName:@"RSSTitlesController" bundle:nil];
-    }
-    self.rssTitlesController.detailItem = [[Config instance].items[(NSUInteger) indexPath.row] valueForKey:@"url"];
-
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    cell.accessoryView = [Chrome activityIndicatorForView:nil];
-
-    dispatch_queue_t loadQueue = dispatch_queue_create("Load Queue", NULL);
-
-        dispatch_async(loadQueue, ^{
-            [self.rssTitlesController reload];
-
-            dispatch_async(dispatch_get_main_queue(), ^{
-                cell.accessoryView = nil;
-            });
-        });
-    }
-}
-
-
 @end
 
 
