@@ -12,5 +12,16 @@
 SPEC_BEGIN(MeteorSpec)
     describe(@"Meteor", ^{
 
+        it(@"should be predicted", ^{
+            
+        });
+        it(@"should cause panic", ^{
+
+        });
+
+        context(@"world press", ^{
+
+        });
+
     });
 SPEC_END
